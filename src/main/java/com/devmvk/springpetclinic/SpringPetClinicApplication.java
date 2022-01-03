@@ -14,20 +14,22 @@ public class SpringPetClinicApplication {
     public static void main(String[] args) {
 
        ApplicationContext ctx = SpringApplication.run(SpringPetClinicApplication.class, args);
+//
+//
+//        PropertyGreetingController propertyGreetingController = (PropertyGreetingController) ctx.getBean(PropertyGreetingController.BEAN_CONTEXT_NAME);
+//        SetterGreetingController setterGreetingController = (SetterGreetingController) ctx.getBean(SetterGreetingController.BEAN_CONTEXT_NAME);
+//        ConstructGreetingController constructGreetingController = (ConstructGreetingController) ctx.getBean(ConstructGreetingController.BEAN_CONTEXT_NAME);
+//
+//        System.out.println("Property Greeting ---> En");
+//        System.out.println(propertyGreetingController.greetMe());
+//        System.out.println("**************************");
+//        System.out.println("Setter Greeting ---> Es");
+//        System.out.println(setterGreetingController.greetMe());
+//        System.out.println("**************************");
+//        System.out.println("Construct Greeting ---> Fr");
+//        System.out.println(constructGreetingController.greetMe());
 
-
-        PropertyGreetingController propertyGreetingController = (PropertyGreetingController) ctx.getBean(PropertyGreetingController.BEAN_CONTEXT_NAME);
-        SetterGreetingController setterGreetingController = (SetterGreetingController) ctx.getBean(SetterGreetingController.BEAN_CONTEXT_NAME);
-        ConstructGreetingController constructGreetingController = (ConstructGreetingController) ctx.getBean(ConstructGreetingController.BEAN_CONTEXT_NAME);
-
-        System.out.println("Property Greeting ---> En");
-        System.out.println(propertyGreetingController.greetMe());
-        System.out.println("**************************");
-        System.out.println("Setter Greeting ---> Es");
-        System.out.println(setterGreetingController.greetMe());
-        System.out.println("**************************");
-        System.out.println("Construct Greeting ---> Fr");
-        System.out.println(constructGreetingController.greetMe());
+        BeanLifeCycle beanLifeCycle = (BeanLifeCycle) ctx.getBean(BeanLifeCycle.BEAN_CONTEXT_NAME);
 
 
     }
