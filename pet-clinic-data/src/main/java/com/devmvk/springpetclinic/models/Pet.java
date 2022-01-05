@@ -1,8 +1,10 @@
 package com.devmvk.springpetclinic.models;
 
+import com.devmvk.springpetclinic.entities.BaseEntity;
+
 import java.time.LocalDate;
 
-public class Pet {
+public class Pet extends BaseEntity {
     private final PetType petType;
     private Owner owner;
     private final LocalDate birthDate;

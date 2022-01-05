@@ -1,6 +1,8 @@
 package com.devmvk.springpetclinic.models;
 
-public class Person {
+import com.devmvk.springpetclinic.entities.BaseEntity;
+
+public class Person extends BaseEntity {
 
     private final String firstName;
     private final String lastName;

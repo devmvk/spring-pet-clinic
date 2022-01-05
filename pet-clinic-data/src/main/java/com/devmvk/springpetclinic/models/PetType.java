@@ -1,6 +1,8 @@
 package com.devmvk.springpetclinic.models;
 
-public class PetType {
+import com.devmvk.springpetclinic.entities.BaseEntity;
+
+public class PetType extends BaseEntity {
     private final String name;
 
     public PetType(String name) {
