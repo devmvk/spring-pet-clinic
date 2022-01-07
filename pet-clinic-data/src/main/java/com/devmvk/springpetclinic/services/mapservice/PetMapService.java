@@ -1,6 +1,5 @@
 package com.devmvk.springpetclinic.services.mapservice;
 
-import com.devmvk.springpetclinic.models.Owner;
 import com.devmvk.springpetclinic.models.Pet;
 import com.devmvk.springpetclinic.services.CrudService;
 
