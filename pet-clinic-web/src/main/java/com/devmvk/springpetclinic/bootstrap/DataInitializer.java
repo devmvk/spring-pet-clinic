@@ -22,11 +22,21 @@ public class DataInitializer implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        Owner owner1 = new Owner("varun", "madupu");
+        Owner owner1 = new Owner("Varun", "madupu");
+        owner1.setId(1L);
         ownerService.save(owner1);
 
+        Owner owner2 = new Owner("Anand", "madupu");
+        owner2.setId(2L);
+        ownerService.save(owner2);
+
         Vet vet1 = new Vet("david", "ram");
+        vet1.setId(2L);
         vetService.save(vet1);
+
+        Vet vet2 = new Vet("Raheem", "ram");
+        vet2.setId(3L);
+        vetService.save(vet2);
 
 
     }
